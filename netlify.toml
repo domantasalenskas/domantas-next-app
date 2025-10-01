@@ -1,0 +1,13 @@
+[build]
+  command = "npm run build"
+  publish = ".next"
+
+[build.environment]
+  NODE_VERSION = "18"
+
+[[plugins]]
+  package = "@netlify/plugin-nextjs"
+
+# Environment variables are automatically provided by Netlify
+# NETLIFY_DATABASE_URL and NETLIFY_DATABASE_URL_UNPOOLED
+# will be mapped to DATABASE_URL and DIRECT_URL by our setup script
