@@ -2,10 +2,10 @@ app = "domantas-next-app"
 primary_region = "ams"
 
 [build]
-builder = "paketobuildpacks/builder:jammy"
+builder = "paketobuildpacks/builder:base"
 
 [build.args]
-BP_NODE_VERSION = "18.20.4"
+BP_NODE_VERSION = "19.9.0"
 
 [deploy]
 release_command = "npx prisma db push"
